@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:800|Lato|Lato:600");
+
+body {
+  margin: 2em;
+  font: 12pt/1.3 "Lato", sans-serif;
+}
+
+main {
+  max-width: 25em;
+  margin: auto;
+}
+
+#s {
+  margin: auto;
+  display: block;
+}
+
+h1 {
+  font: 3.5rem "Work Sans", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.lede {
+  text-align: center;
+  padding: 1em;
+  border: 1px solid #003181;
+  border-width: 1px 0 1px 0;
+}
+a {
+  color: #003181;
+}
+
+ul.projects > li > a {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5em;
+}
