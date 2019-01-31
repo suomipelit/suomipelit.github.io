@@ -6,7 +6,7 @@ body {
 }
 
 main {
-  max-width: 37em;
+  max-width: 42em;
   margin: auto;
 }
 
@@ -42,4 +42,47 @@ ul.projects > li > a {
   font-weight: bold;
   display: block;
   margin-bottom: 0.5em;
+}
+
+ul.downloads {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+ul.downloads li {
+  flex: 1;
+  list-style: none;
+  padding: 1em;
+  margin: 0;
+  text-align: center;
+}
+
+ul.downloads li a {
+
+  text-decoration: none;
+}
+
+ul.downloads li img {
+  height: 4em;
+  margin: auto;
+  display: block;
+  margin-bottom: 1em;
+  opacity: .7;
+}
+
+ul.downloads li a:hover {
+  text-decoration: underline
+}
+
+ul.downloads li a:hover img {
+  opacity: 1;
+}
+
+ul.downloads li .ver {
+  text-decoration: none;
+  display: block;
+  font-size: 80%;
+  margin-bottom: .5em;
 }
