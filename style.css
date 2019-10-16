@@ -38,6 +38,10 @@ a {
   color: #003181;
 }
 
+.project {
+  margin-bottom: 2em;
+}
+
 ul.projects > li > a {
   font-weight: bold;
   display: block;
@@ -54,7 +58,7 @@ ul.downloads {
 ul.downloads li {
   flex: 1;
   list-style: none;
-  padding: 1em;
+  padding: 1em 0;
   margin: 0;
   text-align: center;
 }
@@ -85,4 +89,8 @@ ul.downloads li .ver {
   display: block;
   font-size: 80%;
   margin-bottom: .5em;
+}
+
+.other {
+  font-size: 80%;
 }
