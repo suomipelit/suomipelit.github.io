@@ -11,8 +11,8 @@ const pathData = [
   {
     path:
       "M288.645,105.912L177,112L174,61L137,61L139,113L86,116L89,164L140,161L146,217L182,214L178,158L291,152L288.645,105.912Z",
-    fill: "#003181"
-  }
+    fill: "#003181",
+  },
 ];
 const t0 = +new Date();
 function draw() {
@@ -20,7 +20,7 @@ function draw() {
   svg.innerHTML = "";
   const rc = rough.svg(svg);
   const roughness = 2 + Math.sin(t) * 2;
-  pathData.forEach(p => {
+  pathData.forEach((p) => {
     const c = rc.path(
       p.path,
       Object.assign(
@@ -29,7 +29,7 @@ function draw() {
           strokeWidth: "3",
           roughness,
           fill: "rgba(220,220,220,0.4)",
-          fillStyle: "solid"
+          fillStyle: "solid",
         },
         p
       )

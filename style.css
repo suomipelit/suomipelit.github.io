@@ -5,8 +5,8 @@
 }
 
 :root {
-  --div-color:#003181;
-  --light-div-color:#5485d4;
+  --div-color: #003181;
+  --light-div-color: #5485d4;
 }
 
 body {
@@ -71,7 +71,7 @@ a {
 .project {
   border-radius: 10px;
   background: #ffffff;
-  box-shadow:  21px 21px 43px #d9d9d9,  -21px -21px 43px #ffffff;
+  box-shadow: 21px 21px 43px #d9d9d9, -21px -21px 43px #ffffff;
   margin: 1em;
   padding: 1em 2em;
   min-width: 32em;
@@ -79,7 +79,7 @@ a {
   text-align: center;
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
   .project {
     max-width: none;
     width: 100%;
@@ -124,11 +124,11 @@ ul.downloads li img {
   margin: auto;
   display: block;
   margin-bottom: 1em;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 ul.downloads li a:hover {
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 ul.downloads li a:hover img {
@@ -139,7 +139,7 @@ ul.downloads li .ver {
   text-decoration: none;
   display: block;
   font-size: 80%;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .other {
