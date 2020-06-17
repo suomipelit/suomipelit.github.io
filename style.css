@@ -82,7 +82,7 @@ a {
 @media (max-width: 1200px) {
   .project {
     max-width: none;
-    width: 100%;
+    min-width: auto;
   }
 }
 
@@ -103,6 +103,7 @@ ul.projects > li > a {
 ul.downloads {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -125,6 +126,12 @@ ul.downloads li img {
   display: block;
   margin-bottom: 1em;
   opacity: 0.7;
+}
+
+@media (max-width: 1200px) {
+  ul.downloads li img {
+    height: 2.5em;
+  }
 }
 
 ul.downloads li a:hover {
