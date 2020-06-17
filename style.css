@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:800|Lato|Lato:600");
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --div-color:#003181;
+  --light-div-color:#5485d4;
 }
 
 body {
@@ -9,9 +14,23 @@ body {
   font: 12pt/1.3 "Lato", sans-serif;
 }
 
-main {
+section {
   max-width: 42em;
   margin: auto;
+}
+
+section#releases {
+  max-width: 120em;
+}
+
+section#releases > h2 {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #s {
@@ -41,6 +60,8 @@ h1 a {
 
 .image {
   width: 250px;
+  margin: auto;
+  display: block;
 }
 
 a {
@@ -48,9 +69,29 @@ a {
 }
 
 .project {
-  border: 1px solid var(--div-color);
-  border-width: 0px 0 1px 0;
-  margin-bottom: 2em;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow:  21px 21px 43px #d9d9d9,  -21px -21px 43px #ffffff;
+  margin: 1em;
+  padding: 1em 2em;
+  min-width: 32em;
+  max-width: 45em;
+  text-align: center;
+}
+
+@media (max-width: 1200px) { 
+  .project {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+.project h3 {
+  margin: 0;
+}
+
+.project header {
+  margin-bottom: 1em;
 }
 
 ul.projects > li > a {
@@ -75,7 +116,6 @@ ul.downloads li {
 }
 
 ul.downloads li a {
-
   text-decoration: none;
 }
 
@@ -104,4 +144,8 @@ ul.downloads li .ver {
 
 .other {
   font-size: 80%;
+}
+
+.plat {
+  white-space: nowrap;
 }
