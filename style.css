@@ -90,8 +90,19 @@ a {
   margin: 0;
 }
 
+.project a {
+  text-decoration: none;
+}
+
 .project header {
   margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.project header img {
+  height: 0.8em;
 }
 
 ul.projects > li > a {
@@ -134,7 +145,7 @@ ul.downloads li img {
   }
 }
 
-ul.downloads li a:hover {
+.project a:hover {
   text-decoration: underline;
 }
 
