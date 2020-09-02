@@ -84,6 +84,9 @@ a {
     max-width: none;
     min-width: auto;
   }
+  .project header {
+    flex-direction: column;
+  }
 }
 
 .project h3 {
